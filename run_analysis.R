@@ -21,9 +21,9 @@ y_all <- rbind (y_test, y_train)
 colnames(X_all) <- as.character(features$V2)
 
 # use a regular expression to determine which rows in table
-# features designate a "-mean()-" or "-std()-" measurement;
+# features designate a "-mean()" or "-std()" measurement;
 # these correspond to the columns we want to keep from X_all
-salient_features <- grepl("-(mean|std)\\(\\)-", features$V2)
+salient_features <- grepl("-(mean|std)\\(\\)", features$V2)
 
 # build a new table from X_all with just the columns we want
 tidy_data <- X_all[, salient_features]
@@ -41,6 +41,10 @@ colnames(tidy_data) <- c("Activity", current_colnames)
 current_colnames <- colnames(tidy_data)
 tidy_data <- cbind(subject_all, tidy_data)
 colnames(tidy_data) <- c("Subject", current_colnames)
+
+# clean up our column names a bit
+colnames(tidy_data) <- gsub("mean\\(\\)", "Mean", colnames(tidy_data))
+colnames(tidy_data) <- gsub("std\\(\\)", "Std", colnames(tidy_data))
 
 # write our tidy data set to a file
 write.table(tidy_data, "tidy_data.txt")
