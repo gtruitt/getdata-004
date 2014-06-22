@@ -26,9 +26,9 @@ A new file, *tidy_data.txt*, will be produced in the *UCI HAR Dataset* folder. T
 
  8. Builds a new data table (**tidy_data**) from the unified **X** data table, taking only those columns from **X** which are also found in **salient_features**.
 
- 9. Prepend the **activities** factor as the first column of **tidy_data** and give it a useful name ("Activity").
+ 9. Prepends the **activities** factor as the first column of **tidy_data** and give it a useful name ("Activity").
 
- 10. Prepend the **subjects** unified data table as the first column of **tidy_data** and give it a useful name ("Subject"). Note that "Activity" is now the second column.
+ 10. Prepends the **subjects** unified data table as the first column of **tidy_data** and give it a useful name ("Subject"). Note that "Activity" is now the second column.
 
  11. Cleans up the column names in **tidy_data** by replacing substrings in every column name, such that:
 
