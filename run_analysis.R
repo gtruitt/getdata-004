@@ -22,7 +22,7 @@ colnames(X_all) <- as.character(features$V2)
 
 # combine the identifiers from y_all with the labels from
 # activity_labels to build a factor of all the activities
-activity_all <- factor(y_all$V1,labels=activity_labels$V2)
+activities <- factor(y_all$V1,labels=activity_labels$V2)
 
 # use a regular expression to determine which rows in table
 # features designate a "-mean()" or "-std()" measurement;
@@ -32,9 +32,9 @@ salient_features <- grepl("-(mean|std)\\(\\)", features$V2)
 # build a new table from X_all with just the columns we want
 tidy_data <- X_all[, salient_features]
 
-# prepend activity_all as the first column of tidy_data and label it
+# prepend activities as the first column of tidy_data and label it
 current_colnames <- colnames(tidy_data)
-tidy_data <- cbind(activity_all, tidy_data)
+tidy_data <- cbind(activities, tidy_data)
 colnames(tidy_data) <- c("Activity", current_colnames)
 
 # prepend subject_all as the first column of tidy_data and label it
