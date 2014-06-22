@@ -1,6 +1,6 @@
 ## Codebook for *tidy_data.txt*
 
-Each column in this data file (except the first two) represents a named feature from the UCI HAR Dataset, which has been averaged over a grouping by Subject and Activity (those are the first two columns). For further discussion of the process by which this data file was generated, refer to the README. For further information regarding the features provided in the UCI HAR Dataset, refer to *features_info.txt* within that dataset. The following columns are present in this data file:
+Each column in this data file (except the first two) represents a named feature from the UCI HAR Dataset, which has been averaged over a grouping by Subject and Activity (those are the first two columns). For further discussion of the process by which this data file was generated, refer to the [README](https://github.com/gtruitt/getdata-004/blob/master/README.md). For further information regarding the features provided in the UCI HAR Dataset, refer to *features_info.txt* within that dataset. The following columns are present in this data file:
 
 #####**Subject**
 ######Info: The subject who generated the data.
