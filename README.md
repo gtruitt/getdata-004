@@ -1,5 +1,5 @@
 ## Cleaning the UCI HAR Dataset
----
+
 Download the zip file provided for the class project:
 
 > [getdata-projectfiles-UCI HAR Dataset.zip](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
@@ -9,7 +9,6 @@ The zip file contains one folder, *UCI HAR Dataset*, which you should extract to
 A new file, *tidy_data.txt*, will be produced in the *UCI HAR Dataset* folder. This tidy dataset can be loaded in R using the *read.table* command. The following operations are performed on the original dataset in order to create the tidy dataset.
 
 ### Operations performed by run_analysis.R
----
 
  1. Loads raw test data from the *test* directory into data tables representing the **subject**, **X**, and **y** data.
 
