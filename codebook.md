@@ -4,10 +4,12 @@ Each column in this data file represents the average of the named feature from t
 
 #####**Subject**
 Info: The subject who generated the data.
+
 Possible Values: integers 1 through 30
 
 #####**Activity**
 Info: The activity the subject was engaged in when the data was generated.
+
 Possible Values:
  - WALKING
  - WALKING_UPSTAIRS
