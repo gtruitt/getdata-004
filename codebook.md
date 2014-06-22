@@ -1,16 +1,14 @@
 ## Codebook for *tidy_data.txt*
 
-Each column in this data file represents the average of the named feature from the UCI HAR Dataset, grouped by Subject and Activity. For further discussion of the process by which this data file was generated, refer to the README. For further information regarding the features provided in the UCI HAR Dataset, refer to *features_info.txt* within that dataset. The following columns are present in this data file:
+Each column in this data file (except the first two) represents a named feature from the UCI HAR Dataset, which has been averaged over a grouping by Subject and Activity (those are the first two columns). For further discussion of the process by which this data file was generated, refer to the README. For further information regarding the features provided in the UCI HAR Dataset, refer to *features_info.txt* within that dataset. The following columns are present in this data file:
 
 #####**Subject**
-Info: The subject who generated the data.
-
-Possible Values: integers 1 through 30
+######Info: The subject who generated the data.
+######Possible Values: integers 1 through 30
 
 #####**Activity**
-Info: The activity the subject was engaged in when the data was generated.
-
-Possible Values:
+######Info: The activity the subject was engaged in when the data was generated.
+######Possible Values:
  - WALKING
  - WALKING_UPSTAIRS
  - WALKING_DOWNSTAIRS
