@@ -9,12 +9,12 @@ Possible Values: integers 1 through 30
 #####**Activity**
 Info: The activity the subject was engaged in when the data was generated.
 Possible Values:
-> WALKING
-WALKING_UPSTAIRS
-WALKING_DOWNSTAIRS
-SITTING
-STANDING
-LAYING
+ - WALKING
+ - WALKING_UPSTAIRS
+ - WALKING_DOWNSTAIRS
+ - SITTING
+ - STANDING
+ - LAYING
 
 #####**tBodyAcc.Mean.X**
 Info: average by Subject and Activity over UCI HAR feature "tBodyAcc-mean()-X"
