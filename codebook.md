@@ -215,5 +215,5 @@ Each column in this data file (except the first two) represents a named feature 
 #####**fBodyBodyGyroJerkMag.Mean**
 *Info:* average by Subject and Activity over UCI HAR feature "fBodyBodyGyroJerkMag-mean()"
 
-#####**fBodyBodyGyroJerkMag.Std **
+#####**fBodyBodyGyroJerkMag.Std**
 *Info:* average by Subject and Activity over UCI HAR feature "fBodyBodyGyroJerkMag-std()"
